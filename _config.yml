@@ -1,0 +1,5 @@
+title: "Ramon Sanchez - Resume"
+description: "Personal resume hosted on GitHub Pages using Jekyll"
+baseurl: "" # Leave blank for GitHub Pages
+url: "https://username.github.io" # Replace with your GitHub username and site URL
+theme: minima # Jekyll theme to simplify setup
