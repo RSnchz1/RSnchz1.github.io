@@ -22,8 +22,15 @@
             text-align: center;
             font-size: 30px;
         }
-        h2, h3 {
+        h2 {
+          color: #343a40;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        h3 {
             color: #343a40;
+            font-size: 16px;
+            font-weight: bold;
         }
         p {
           color: #495057;
@@ -37,6 +44,17 @@
             text-align: center;
             color: #343a40;
         }
+        .row {
+          display: flex;
+          justify-content: space-between;
+          border-radius: 10px;
+        }
+        .left-align {
+          text-align: left;
+        }
+        .right-align {
+          text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -48,31 +66,81 @@
         <hr style="width:90%">
         
         <h2>Education</h2>
-        <h3>San Jose State University, San Jose, CA</h3>
-        <p><strong>M. S. in Industrial and Systems Engineering</strong> (01/2023 – 12/2024)</p>
-        <p>Relevant Coursework: Advanced Operations Research, Design and Analysis of Engineering Experiments, Analytics for Systems Engineers, Financial Methods for Engineers, Quality Assurance and Reliability.</p>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="text-align: left;"><h3>San Jose State University</h3></span>
+          <span style="text-align: right;">San Jose, CA</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; line-height:0.5">
+          <span style="text-align: left;">M. S. in Industrial and Systems Engineering</span>
+          <span style="text-align: right;">01/2023 – 12/2024</span>
+        </div>
+        <ul style="margin-top: 10px;line-height: 1.5">
+          <li>Relevant Coursework: Advanced Operations Research, Design and Analysis of Engineering 
+          Experiments, Analytics for Systems Engineers, Financial Methods for Engineers, Quality Assurance 
+          and Reliability.</li>
+        </ul>
         
-        <h3>Universidad Aeronautica en Queretaro, Queretaro, Mexico</h3>
-        <p><strong>B. S. in Aeronautical Manufacturing Engineering</strong> (09/2015 – 04/2020)</p>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="text-align: left;"><h3>Universidad Aeronautica en Queretaro</h3></span>
+          <span style="text-align: right;">Queretaro, Mexico</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; line-height:0.5">
+          <span style="text-align: left;">B. S. in Aeronautical Manufacturing Engineering</span>
+          <span style="text-align: right;">09/2015 – 04/2020</span>
+        </div>
+        
+        <hr style="width:90%">
         
         <h2>Skills</h2>
         <ul>
             <li><strong>Software:</strong> SolidWorks (CSWA), Minitab, AutoCAD, CATIA, MATLAB, ProModel, SIMIO, R Studio, Jira, Python (OpenCV, TensorFlow, Scikit-Learn), Microsoft Excel (Pivot Tables, Macros).</li>
             <li><strong>Tools and Methodologies:</strong> Lean Six Sigma, SPC (Control Charts, Process Capability Analysis), Root Cause Analysis (5 Whys, Cause and Effect Diagram), FMEA, DEO, Eight Disciplines, Quality Management Systems (ISO9001, AS9100).</li>
         </ul>
+        
+        <hr style="width:90%">
 
         <h2>Experience</h2>
-        <h3>Monarch Tractor, Livermore, CA - Quality Engineering Intern (06/2023 – 08/2023)</h3>
-        <ul>
-            <li>Developed and implemented a new incoming inspection procedure that resulted in a 100% increase in defect detection, significantly enhancing product quality.</li>
-            <li>Managed daily operations within the incoming inspection area, ensuring optimal process efficiency and streamlined workflow.</li>
-            <li>Collaborated with cross-functional teams to perform root cause analyses of quality issues; implemented Corrective and Preventive Actions (CAPA).</li>
+        
+        <div style="display: flex; justify-content: space-between;">
+          <span style="text-align: left;"><h3>Monarch Tractor</h3></span>
+          <span style="text-align: right;">Livermore, CA</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; line-height:0.5">
+          <span style="text-align: left;">Quality Engineering Intern</span>
+          <span style="text-align: right;">06/2023 – 08/2023</span>
+        </div>
+        <ul style="margin-top: 10px;line-height: 1.5">
+          <li>Developed and implemented a new incoming inspection procedure that resulted in a 100% increase in defect detection,
+              significantly enhancing product quality.</li>
+          <li>Defined priorities and managed daily operations within the incoming inspection area, ensuring optimal process efficiency and
+              streamlined workflow.</li>
+          <li>Collaborated with cross-functional teams to perform root cause analyses of quality issues; implemented and followed up on
+              Corrective and Preventive Actions (CAPA), leading to a reduction in overall defect recurrence.</li>
+          <li>Facilitated the development and tracking of Supplier Corrective Action Requests (SCAR) based on incoming inspection
+              findings, which led to improved supplier compliance and decreased defect rates in subsequent shipments.</li>
+          <li>Utilized training in Geometric Dimensioning and Tolerancing (GD&T) to develop and implement effective inspection
+              methods, resulting in improved measurement accuracy.</li>
         </ul>
         
-        <h3>Safran Aircraft Engines, Queretaro, Mexico - Project Engineering Intern (06/2019 – 04/2020)</h3>
-        <ul>
-            <li>Led a DMAIC project that successfully reduced costs in a CNC machining operation, increasing profitability by 50%.</li>
-            <li>Implemented statistical process control tools, improving first-time yield by 10%.</li>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="text-align: left;"><h3>Safran Aircraft Engines</h3></span>
+          <span style="text-align: right;">Queretaro, Mexico</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; line-height:0.5">
+          <span style="text-align: left;">Project Engineering Intern</span>
+          <span style="text-align: right;">06/2019 – 04/2020</span>
+        </div>
+        <ul style="margin-top: 10px;line-height: 1.5">
+          <li>Led a DMAIC project that successfully reduced costs in a CNC machining operation, resulting in a 50% increase in
+              profitability.</li>
+          <li>Collaborated with lead engineers to implement statistical process control tools, effectively identifying and reducing process
+              variability, which achieved a 10% improvement in first-time yield.</li>
+          <li>Executed process changes in strict alignment with PPAP requirements, ensuring adherence to quality and regulatory standards.</li>
+          <li>Owned process documentation, including SOPs, work instructions, and BOMs, ensuring change traceability and compliance.</li>
+          <li>Participated in cross-functional teams utilizing the 8D methodology to systematically address and resolve production issues,
+              contributing valuable insights that enhanced process stability and minimized recurrence of issues.</li>
+          <li>Engaged in FMEA sessions with multidisciplinary teams to proactively identify potential failure modes, assess their impact
+              on process performance, and plan effective mitigation strategies that enhanced process reliability.</li>
         </ul>
 
         <h3>San Jose State University - Graduate Research Assistant (02/2023)</h3>
@@ -80,6 +148,8 @@
             <li>Designed and implemented an automated rendering pipeline using Python and Blender to produce large-scale photorealistic images of manufacturing processes.</li>
             <li>Conducted quality checks on synthetic images for deep learning object detection models.</li>
         </ul>
+        
+        <hr style="width:90%">
 
         <h2>Projects</h2>
         <h3>AI-Driven Vision Inspection System for Defect Detection</h3>
